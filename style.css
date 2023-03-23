@@ -1,0 +1,201 @@
+ /* Fixed Header Section */
+.fixed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--size-100);
+  margin: 0 var(--size-40);
+  max-width: -webkit-fill-available;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 75%;
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  margin-right: var(--size-12);
+ }
+
+.search-icons span { padding: 0 var(--size-8); }
+
+.google-logo, .profile-icons { background: none; }
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  height: var(--size-44);
+  width: 100%;
+  max-width: calc(25vw + 355px);
+  margin-left: var(--size-45);
+  border-radius: var(--size-25);
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 5px 0px silver;
+}
+
+.input-container input {
+  border: 1px solid transparent;
+  margin-left: var(--size-15);
+  font-size: var(--size-16);
+  width: 100%;
+  opacity: 0.87;
+}
+
+input:focus-visible { outline: none; }
+
+.material-icons,
+.material-symbols-outlined,
+.sub-search-container .category,
+.sub-search-settings span { cursor: pointer; }
+
+.icon-divider { 
+  border-left: 1px solid #dadce0;
+  height: 65%;
+}
+
+.profile-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 10%;
+}
+
+.profile-icons span {
+  display: inline-block;
+  fill: var(--black);
+  color: #5f6368;
+  height: var(--size-24);
+  line-height: var(--size-24);
+  position: relative;
+  width: var(--size-24);
+}
+
+.profile-icons span:last-child {
+  font-size: var(--size-40);
+  height: var(--size-40);
+}
+
+.profile-icons span:last-child,
+.search-icons { color: #1a73e8; }
+
+.profile-icons span:last-child i { font-size: 100%; }
+
+/* Search Sub-categories Section */
+
+.sub-search {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6;
+  max-width: calc(25vw + -184.75px + 452px);
+  font-size: var(--size-14);
+  font-family: Roboto, arial, sans-serif;
+  color: #5f6368;
+}
+
+.sub-search-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.sub-search i { 
+  font-size: var(--size-18);
+  vertical-align: sub;
+}
+
+.sub-header { 
+  width: 100%;
+  max-width: 74%;
+}
+
+.sub-search-container .category:first-child { border-bottom: 3px solid dodgerblue; }
+
+.sub-search-container .category:last-child i { width: var(--size-12); }
+
+.category { 
+  display: inline;
+  padding-bottom: 25px;
+}
+
+.category.shopping .material-symbols-outlined { transform: scaleX(-1); }
+
+.sub-search-settings span { display: inline-block; }
+
+.sub-search-settings span:first-child { padding-right: 1.5rem; }
+
+/* Top Results Section */
+
+.search-results {
+  color: gray;
+  margin-bottom: var(--size-20);
+}
+
+.result { padding-bottom: var(--size-50);}
+
+.search-results, 
+.result div span,
+.result-date { opacity: 0.5; }
+
+.related-links ul { 
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+/* People Also Ask Section */
+
+.people-also-ask { margin-bottom: var(--size-50); }
+
+table { 
+  width: 100%;
+  text-indent: var(--size-25);
+  border-spacing: 0;
+  border-radius: var(--size-10);
+}
+
+table { border: 1px solid #dadce0; }
+
+
+th { text-align: inherit; }
+
+th, td { padding: 0.75rem 0; }
+
+td { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #dadce0;
+}
+
+td span { padding-right: var(--size-10); }
+
+
+
+
+/* Footer Section */
+
+footer { 
+  text-align: center;
+  margin-bottom: var(--size-50);
+}
+
+footer h2 { 
+  display: inline;
+  padding-right: 2rem;
+  font-size: 2rem;
+}
+
+.result-nav-page {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.page-num-container {
+  display: flex;
+  gap: 1rem;
+}
